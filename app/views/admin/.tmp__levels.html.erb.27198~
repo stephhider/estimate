@@ -1,0 +1,3 @@
+    <% @levels.each do |v| %>
+      <p><%=check_box_tag 'levels[]', v.id.to_s, @current_levels.include?(v.id), :id => "checkbox_#{v.id}" %><%=label_tag "checkbox_#{v.id}", v.name%></p>
+    <% end %>

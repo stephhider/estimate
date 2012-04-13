@@ -4814,3 +4814,1814 @@ Processing UsersController#index (for 127.0.0.1 at 2012-04-09 14:08:07) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 14:29:25) [GET]
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-09 14:29:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 14:29:36) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-09 14:29:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2012-04-09 14:29:42) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "id"=>"1", "user"=>{"name"=>"super admin", "sex"=>"male", "age"=>"29", "password"=>"adzcsx", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'super admin' AND "users".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3008/users/1
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-09 14:29:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-09 14:30:03) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-09 14:30:06) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>"adazcsx"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering login/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-09 14:30:09) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>"adzcsx"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Redirected to http://localhost:3008/users
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/login/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 14:30:09) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-09 14:30:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 14:30:44) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:30:11) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:30:14) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:43:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:43:50) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:43:50) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:44:19) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:44:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:44:51) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:00) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:01) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:19) [GET]
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:45:19) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:47:03) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:48:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:48:02) [GET]
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:48:22) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:50:37) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:20) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:21) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:21) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:21) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:21) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:51:22) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:53:06) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:56:44) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:57:09) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:59:42) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:59:49) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:59:49) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 16:59:49) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 17:00:08) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 17:00:17) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-09 17:00:55) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:31:53) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2012-04-10 08:31:58) [GET]
+Redirected to http://localhost:3008/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/login/logout]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-10 08:31:58) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-04-10 08:32:08) [GET]
+
+ActionController::RoutingError (No route matches "/userusers" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:32:09) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2012-04-10 08:33:20) [GET]
+Redirected to http://localhost:3008/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/login/logout]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-10 08:33:20) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-10 08:33:22) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>""}
+  [4;36;1mUser Load (31.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering login/index
+Completed in 250ms (View: 0, DB: 31) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-10 08:33:25) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>"adzcsx"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Redirected to http://localhost:3008/users
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/login/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:33:25) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2012-04-10 08:33:27) [GET]
+Redirected to http://localhost:3008/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/login/logout]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-10 08:33:27) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:33:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-10 08:33:35) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3008/
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/1/edit]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-10 08:33:35) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-10 08:34:14) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>""}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering login/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-10 08:34:18) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user_name"=>"super admin", "password"=>"adzcsx"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Redirected to http://localhost:3008/users
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/login/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:34:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-10 08:34:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-10 08:34:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered common/_head (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-04-10 08:34:42) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (15.6ms)
+Completed in 656ms (View: 62, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-10 08:34:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user"=>{"name"=>"super admin", "sex"=>"male", "age"=>"29", "password"=>"123456", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-10 08:37:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user"=>{"name"=>"super admin", "sex"=>"male", "age"=>"29", "password"=>"123456", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-10 08:37:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user"=>{"name"=>"super admin", "sex"=>"male", "age"=>"29", "password"=>"123456", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-10 08:37:59) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "user"=>{"name"=>"super admin", "sex"=>"male", "age"=>"29", "password"=>"123456", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-10 08:38:21) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LevelsController#index (for 127.0.0.1 at 2012-04-10 08:38:57) [GET]
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+Rendering template within layouts/levels
+Rendering levels/index
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/levels]
+
+
+Processing LevelsController#new (for 127.0.0.1 at 2012-04-10 08:39:11) [GET]
+Rendering template within layouts/levels
+Rendering levels/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/levels/new]
+
+
+Processing LevelsController#create (for 127.0.0.1 at 2012-04-10 08:39:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "level"=>{"name"=>"admin", "describe"=>"can do admin thins"}}
+  [4;35;1mLevel Create (46.9ms)[0m   [0mINSERT INTO "levels" ("name", "created_at", "describe", "updated_at") VALUES('admin', '2012-04-10 00:39:24', 'can do admin thins', '2012-04-10 00:39:24')[0m
+Redirected to http://localhost:3008/levels/2
+Completed in 312ms (DB: 47) | 302 Found [http://localhost/levels]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 08:39:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" WHERE ("levels"."id" = 2) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/levels/2]
+
+
+Processing LevelsController#edit (for 127.0.0.1 at 2012-04-10 08:39:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 2) [0m
+Rendering template within layouts/levels
+Rendering levels/edit
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/levels/2/edit]
+
+
+Processing LevelsController#update (for 127.0.0.1 at 2012-04-10 08:39:31) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "level"=>{"name"=>"admin", "describe"=>"can do admin things"}, "id"=>"2"}
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" WHERE ("levels"."id" = 2) [0m
+  [4;35;1mLevel Update (0.0ms)[0m   [0mUPDATE "levels" SET "updated_at" = '2012-04-10 00:39:31', "describe" = 'can do admin things' WHERE "id" = 2[0m
+Redirected to http://localhost:3008/levels/2
+Completed in 750ms (DB: 0) | 302 Found [http://localhost/levels/2]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 08:39:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" WHERE ("levels"."id" = 2) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/levels/2]
+
+
+Processing LevelsController#index (for 127.0.0.1 at 2012-04-10 08:39:36) [GET]
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/levels
+Rendering levels/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/levels]
+
+
+Processing LevelsController#new (for 127.0.0.1 at 2012-04-10 08:39:39) [GET]
+Rendering template within layouts/levels
+Rendering levels/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/levels/new]
+
+
+Processing LevelsController#create (for 127.0.0.1 at 2012-04-10 08:39:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5aieroydAE57/0ZwHpB9PRpI7sqHhV4d7rYuj89JmfM=", "level"=>{"name"=>"user", "describe"=>"common user"}}
+  [4;36;1mLevel Create (46.9ms)[0m   [0;1mINSERT INTO "levels" ("name", "created_at", "describe", "updated_at") VALUES('user', '2012-04-10 00:39:46', 'common user', '2012-04-10 00:39:46')[0m
+Redirected to http://localhost:3008/levels/3
+Completed in 438ms (DB: 47) | 302 Found [http://localhost/levels]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 08:39:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 3) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/levels/3]
+
+
+Processing LevelsController#index (for 127.0.0.1 at 2012-04-10 08:39:48) [GET]
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+Rendering template within layouts/levels
+Rendering levels/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/levels]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 08:39:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 3) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/levels/3]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 08:40:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" WHERE ("levels"."id" = 3) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/levels/3]
+
+
+Processing LevelsController#show (for 127.0.0.1 at 2012-04-10 14:03:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 1) [0m
+Rendering template within layouts/levels
+Rendering levels/show
+Completed in 172ms (View: 31, DB: 0) | 200 OK [http://localhost/levels/1]
+
+
+Processing LevelsController#index (for 127.0.0.1 at 2012-04-10 14:04:30) [GET]
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+Rendering template within layouts/levels
+Rendering levels/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/levels]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-12 10:25:45) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 391ms (View: 375, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-12 10:25:47) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3008/
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/1/edit]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-12 10:25:47) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-12 10:25:49) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"HKlptHKQ1D2CPkcp6VjVL39uLpRgmeSCwhmPFA7Kdvw=", "user_name"=>"super admin", "password"=>"adzcsx"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Redirected to http://localhost:3008/users
+Completed in 266ms (DB: 0) | 302 Found [http://localhost/login/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-12 10:25:50) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing ApplicationController#authorize_setting (for 127.0.0.1 at 2012-04-12 10:26:12) [GET]
+
+NameError (uninitialized constant AdminsController):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-12 10:29:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-13 10:03:26) [GET]
+  [4;36;1mUser Load (31.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 422ms (View: 391, DB: 31) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-13 10:03:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Rendered common/_head (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-04-13 10:03:29) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3008/
+Filter chain halted as [:check_login] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/1/edit]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2012-04-13 10:03:29) [GET]
+Rendering template within layouts/login
+Rendering login/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2012-04-13 10:03:31) [POST]
+  Parameters: {"commit"=>"Log In", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_name"=>"super admin", "password"=>"adzcsx"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'super admin') LIMIT 1[0m
+Redirected to http://localhost:3008/users
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/login/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-13 10:03:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:03:52) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:08:33) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (can't convert ActiveSupport::SafeBuffer into Array) on line #2 of app/views/admin/authorize_setting.html.erb:
+1: <% form_for :authorize_setting do |f| %>
+2:   <%=f.select "user_ids", [["all", 0 ]] | options_for_select(@users.collect{|v| [v.name,v.id.to_s]})%>
+3:   <%=submit 'Set'%>
+4: <% end %>
+
+    app/views/admin/authorize_setting.html.erb:2:in `|'
+    app/views/admin/authorize_setting.html.erb:2
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:09:09) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `submit' for #<ActionView::Base:0x479ed58>) on line #3 of app/views/admin/authorize_setting.html.erb:
+1: <% form_for :authorize_setting do |f| %>
+2:   <%=f.select "user_ids", options_for_select(@users.collect{|v| [v.name,v.id.to_s]})%>
+3:   <%=submit 'Set'%>
+4: <% end %>
+
+    app/views/admin/authorize_setting.html.erb:3
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:09:19) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-13 10:09:35) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-04-13 10:09:36) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-13 10:09:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user"=>{"name"=>"admin", "sex"=>"male", "age"=>"22", "password"=>"adzcsx", "email"=>"11@qq.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'admin') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "sex", "password", "age", "email") VALUES('admin', '2012-04-13 02:09:55', '2012-04-13 02:09:55', 'male', 'adzcsx', 22, '11@qq.com')[0m
+Redirected to http://localhost:3008/users/2
+Completed in 219ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-13 10:09:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-13 10:09:58) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-04-13 10:09:59) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-13 10:10:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user"=>{"name"=>"admin_2", "sex"=>"male", "age"=>"29", "password"=>"adzcsx", "email"=>"yisuren@yahoo.com.cn"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'admin_2') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "sex", "password", "age", "email") VALUES('admin_2', '2012-04-13 02:10:09', '2012-04-13 02:10:09', 'male', 'adzcsx', 29, 'yisuren@yahoo.com.cn')[0m
+Redirected to http://localhost:3008/users/3
+Completed in 219ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-13 10:10:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Rendered common/_head (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-04-13 10:10:12) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-04-13 10:10:13) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-04-13 10:10:42) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user"=>{"name"=>"user", "sex"=>"female", "age"=>"28", "password"=>"adzcsx", "email"=>"user@qq.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'user') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "sex", "password", "age", "email") VALUES('user', '2012-04-13 02:10:42', '2012-04-13 02:10:42', 'female', 'adzcsx', 28, 'user@qq.com')[0m
+Redirected to http://localhost:3008/users/4
+Completed in 156ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-04-13 10:10:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/show
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/4]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:10:44) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:17:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:17:55) [GET]
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:18:44) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/admin_controller.rb:6:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:19:34) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:22:14) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:22:16) [GET]
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:02) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:23:02) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:24:33) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `user_ids' for nil:NilClass) on line #2 of app/views/admin/authorize_setting.html.erb:
+1: <% form_for :authorize_setting do |f| %>
+2:   <%=f.select "user_ids", options_for_select(@users.collect{|v| [v.name,v.id.to_s]}, @authorize_settring.user_ids)%>
+3:   <%=submit_tag 'Set'%>
+4: <% end %>
+
+    app/views/admin/authorize_setting.html.erb:2
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:25:02) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:25:38) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `object_path' for #<ActionView::Base:0x48b0010>) on line #1 of app/views/admin/authorize_setting.html.erb:
+1: <% form_for @authorize_setting do |f| %>
+2:   <%=f.select "user_ids", options_for_select(@users.collect{|v| [v.name,v.id.to_s]})%>
+3:   <%=submit_tag 'Set'%>
+4: <% end %>
+
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:29:17) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `second' for #<Class:0x46e0b88>):
+  app/controllers/admin_controller.rb:6:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:29:36) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (15.6ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:29:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:32:18) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:32:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:32:19) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:32:19) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:05) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:07) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (15.6ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:07) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:33:43) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:34:01) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:34:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:34:16) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT * FROM "levels" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:35:15) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:35:22) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:37:22) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20120409024141)
+Migrating to CreateLevels (20120409043145)
+Migrating to CreateUserLevels (20120413024054)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "user_levels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(255), "level_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120413024054')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("levels")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_levels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:53:15) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `authorize_settings_path' for #<ActionView::Base:0x45cf3a8>) on line #1 of app/views/admin/authorize_setting.html.erb:
+1: <% form_tag :authorize_settings do %>
+2: <div id='authorize_setting_set'>
+3:   <div id='authorize_setting_users'>
+4:     <%=select_tag 'user_ids', options_for_select(@user.collect{|v| [v.name, v.id]}, params[:user_ids]) %>
+
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:53:35) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `authorize_setting_path' for #<ActionView::Base:0x475fb60>) on line #1 of app/views/admin/authorize_setting.html.erb:
+1: <% form_tag :authorize_setting do %>
+2: <div id='authorize_setting_set'>
+3:   <div id='authorize_setting_users'>
+4:     <%=select_tag 'user_ids', options_for_select(@user.collect{|v| [v.name, v.id]}, params[:user_ids]) %>
+
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:55:06) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (undefined method `authorize_setting_path' for #<ActionView::Base:0x48d4970>) on line #1 of app/views/admin/authorize_setting.html.erb:
+1: <% form_tag :authorize_setting, :url => authorize_setting_admin_path, :html => {:method => :post} do %>
+2: <div id='authorize_setting_set'>
+3:   <div id='authorize_setting_users'>
+4:     <%=select_tag 'user_ids', options_for_select(@user.collect{|v| [v.name, v.id]}, params[:user_ids]) %>
+
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:57:03) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #4 of app/views/admin/authorize_setting.html.erb:
+1: <% form_tag authorize_setting_admin_path, :html => {:method => :post} do %>
+2: <div id='authorize_setting_set'>
+3:   <div id='authorize_setting_users'>
+4:     <%=select_tag 'user_ids', options_for_select(@user.collect{|v| [v.name, v.id]}, params[:user_ids]) %>
+5:   </div>
+6:   <div id='authorize_setting_select_icon'>
+7:   </div>
+
+    app/views/admin/authorize_setting.html.erb:4
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:57:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 10:58:58) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:09:29) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:11:33) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:12:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+
+ActionView::TemplateError (Missing template admin/_levels.erb in view path app/views) on line #9 of app/views/admin/authorize_setting.html.erb:
+6:   <div id='authorize_setting_select_icon'>
+7:   </div>
+8:   <div id='authorize_setting_levels'>
+9:     <%=render :partial => 'levels'%>
+10:   </div>
+11:   <div id='authorize_setting_submit'>
+12:     <%=submit_tag 'Submit'%>
+
+    app/views/admin/authorize_setting.html.erb:9
+    app/views/admin/authorize_setting.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:13:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:21:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:21:44) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>"3"}
+3
+
+NameError (undefined local variable or method `authorize_setting_admin' for #<AdminController:0x47c75d0>):
+  app/controllers/admin_controller.rb:10:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:21:55) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>"3"}
+3
+Redirected to http://localhost:3008/admin/authorize_setting
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:21:55) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:22:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:22:45) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>["1", "2", "3"]}
+123
+Redirected to http://localhost:3008/admin/authorize_setting
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:22:45) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:25:10) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>["2", "3"]}
+["2", "3"]
+"1"
+Redirected to http://localhost:3008/admin/authorize_setting
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 11:25:10) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" [0m
+Rendering template within layouts/admin
+Rendering admin/authorize_setting
+Rendered admin/_levels (0.0ms)
+Rendered common/_head (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/admin/authorize_setting]
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 12:35:25) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>["1"]}
+["1"]
+"1"
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 1) [0m
+
+NameError (uninitialized constant User::UserLevel):
+  app/controllers/admin_controller.rb:20:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 12:46:11) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>["1"]}
+["1"]
+"1"
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 1) [0m
+
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError (Could not find the source association(s) :level or :levels in model UserLevel.  Try 'has_many :levels, :through => :user_levels, :source => <name>'.  Is it one of ?):
+  app/controllers/admin_controller.rb:20:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#authorize_setting (for 127.0.0.1 at 2012-04-13 12:46:44) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"KWPXGUqOljHkBYckPGeFPfuBNTKqDjhZLFK1bL0W2oM=", "user_ids"=>"1", "levels"=>["1"]}
+["1"]
+"1"
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mLevel Load (0.0ms)[0m   [0mSELECT * FROM "levels" WHERE ("levels"."id" = 1) [0m
+  [4;36;1mLevel Load (0.0ms)[0m   [0;1mSELECT "levels".* FROM "levels" INNER JOIN "user_levels" ON "levels".id = "user_levels".level_id WHERE (("user_levels".user_id = 1)) [0m
+  [4;35;1mUserLevel Create (0.0ms)[0m   [0mINSERT INTO "user_levels" ("level_id", "created_at", "updated_at", "user_id") VALUES(1, '2012-04-13 04:46:44', '2012-04-13 04:46:44', 1)[0m
+
+NameError (uninitialized constant AdminController::Userlevel):
+  app/controllers/admin_controller.rb:24:in `authorize_setting'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)

@@ -1,10 +1,6 @@
 class UsersController < LoginAble::LoginAbleController
   
-  before_filter :check_login
-  
-  def check_login
-#    render "public/500.html" unless session[:user]
-  end
+  before_filter :check_login, :only => [:new, :create, :edit, :update, :destroy]
   
   # GET /users
   # GET /users.xml
@@ -86,5 +82,9 @@ class UsersController < LoginAble::LoginAbleController
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def setting
+    
   end
 end

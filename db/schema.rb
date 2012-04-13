@@ -9,11 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120409043145) do
+ActiveRecord::Schema.define(:version => 20120413024054) do
 
   create_table "levels", :force => true do |t|
     t.string   "name"
     t.text     "describe"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_levels", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "level_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -2,7 +2,14 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => 'login'
   map.resources :levels
-  map.resources :users
+  map.resources :users do |user|
+    user.resources :levels, :collection => {:setting => [:get,:post]}, :only => [:setting]
+  end
+  
+  map.resource :admin, :member => {:authorize_setting => [:get,:post]}, 
+               :only => [:authorize_setting],
+               :controller => :admin
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
 

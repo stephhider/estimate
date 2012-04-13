@@ -8,9 +8,9 @@
   <%= stylesheet_link_tag 'custom_scaffold' %>
 </head>
 <body>
-<%=render :partial => 'common/head'%>
 
 <p style="color: green"><%= notice %></p>
+
 <%= yield %>
 
 </body>

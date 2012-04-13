@@ -1,0 +1,36 @@
+<% form_tag authorize_setting_admin_path, :method => :post do %>
+<div id='authorize_setting_set' style='float:left' class='common'>
+  <div id='authorize_setting_users' style='float:left'>
+    <%=select_tag 'user_ids', options_for_select(@users.collect{|v| ["#{v.id}:#{v.name}", v.id.to_s]}, params[:user_ids]), :multiple => true,
+        :onchange => remote_function(:update => 'authorize_setting_levels', :url => {:action => 'level_select_list'}, :with => "'user_ids=' + this.value")%>
+  </div>
+  <div id='authorize_setting_select_icon' style="float:left">
+    <%=link_to image_tag('bullet_add.png'), {}, :id => "user_select_icon", :href => '#'%>
+  </div>
+  <div id='authorize_setting_levels'>
+    <%=render :partial => 'levels'%>
+  </div>
+  <div id='authorize_setting_submit'>
+    <%=submit_tag 'Submit'%>
+  </div>
+</div>
+<div id='authorize_setting_list' style='float:left;padding-left:80px;' class='common'>
+  <%=render :partial => 'user_level_list'%>
+</div>
+<% end %>
+
+<script language="JavaScript">
+  $j(document).ready(function(){
+    $j('#user_select_icon').bind("click",function(){
+      var icon = $j(this);
+      var selbox = $j('#user_ids');
+      if(selbox.attr('multiple')){
+        selbox.attr('multiple', false);
+        icon.html('<%=image_tag("bullet_add.png")%>');
+      }else{
+        selbox.attr('multiple',true);
+        icon.html('<%=image_tag("bullet_delete.png")%>');
+      }
+    });
+  });
+</script>

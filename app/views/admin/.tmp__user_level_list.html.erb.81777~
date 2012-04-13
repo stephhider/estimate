@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <th>user_name</th>
+    <th>user_level</th>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%=user.name%></td>
+      <td><%=user.levels.inject(''){|str, l| str << " | " unless str.blank?; str << l.name}%></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

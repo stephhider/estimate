@@ -1,32 +1,33 @@
 <h1>Editing user</h1>
-
 <% form_for(@user) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password%>
-  </p>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :age %><br />
-    <%= f.text_field :age %>
-  </p>
-  <p>
-    <%= f.label :sex %><br />
-    <%= f.text_field :sex %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+<%= f.error_messages %>
+<p>
+  <%= f.label :name %>
+  <br/>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :password %>
+  <br/>
+  <%= f.password_field :password %>
+</p>
+<p>
+  <%= f.label :email %>
+  <br/>
+  <%= f.text_field :email %>
+</p>
+<p>
+  <%= f.label :age %>
+  <br/>
+  <%= f.text_field :age %>
+</p>
+<p>
+  <%= f.label :sex %>
+  <br/>
+  <%= f.text_field :sex %>
+</p>
+<p>
+  <%= f.submit 'Update' %>
+</p>
 <% end %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Show', @user %> |<%= link_to 'Back', users_path %>

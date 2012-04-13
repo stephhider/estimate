@@ -1,4 +1,4 @@
-class LoginController < ApplicationController
+class LoginController < LoginAble::LoginAbleController
   def index
     params[:user_name] = 'super admin'
   end
@@ -12,5 +12,10 @@ class LoginController < ApplicationController
       session[:user] = user
       redirect_to :controller => :users
     end
+  end
+  
+  def logout
+    session[:user] = nil
+    redirect_to :controller => :login
   end
 end
