@@ -5,7 +5,21 @@ class AdminController < LoginAble::LoginAbleController
       @users = User.find(:all)
       @levels = Level.find(:all)
       @current_levels = []
+    elsif request.xml_http_request? && request.post?
+      # form submited by ajax
+      user = User.find(params[:user_ids]) rescue []
+      levels = Level.find(params[:levels]) rescue []
+      if user.respond_to? :each
+        user.each do |u|
+          u.levels.replace levels
+        end
+      else
+        user.levels.replace levels
+      end
+      @users = User.find(:all, :include => [:levels])
+      render :partial => 'user_level_list', :layout => false
     else
+      # normal form submit
       user = User.find(params[:user_ids]) rescue []
       levels = Level.find(params[:levels]) rescue []
       
